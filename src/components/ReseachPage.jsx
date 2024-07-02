@@ -1,4 +1,4 @@
-import Finder from "../assets/Finder";
+// import Finder from "../assets/Finder";
 import { data } from "../data";
 
 export default function ReseachPage() {
@@ -9,7 +9,10 @@ export default function ReseachPage() {
       </h1>
       <div>
         {data.map((item, idx) => (
-          <div key={idx}>{item.name}</div>
+          <div key={idx}>
+            <div>{item.name}</div>
+            <div>{item.content}</div>
+          </div>
         ))}
       </div>
     </div>
