@@ -31,7 +31,8 @@ export const data = [
   {
     name: "Evidence-Based Management: Panacea or Placebo? Insights from Nigerian HIV/AIDS Service Delivery",
     image: a4,
-    content: "",
+    content:
+      "New Public Management revolutionized the study of management, but increasingly, practitioners and academics focus on what is called evidence-based management (EBMgt) and new public service. Evidence-based management can be defined as the manner in which organizations utilize data and information to inform decision-making processes and shape managerial practices. This research explored how the Nigerian public health delivery is shaped to address the origins and consequences of changes in managerial practice. It is organized around the notion that organizational performance, specifically service delivery, has two aspects: organizational technology (e.g., leadership techniques) and organizational capacity. The hypothesis in this research is that an organization that adopts an evidence-based management grounded in principles of new public service is better at service delivery. This is due to the shared vision, collaboration, and citizen-centered principles that result in more sustainable impact, provided an organization has the necessary capacity. ",
     button: "Read More",
   },
   {
@@ -48,5 +49,11 @@ export const data = [
       "Research that provides insight into the various challenges women face, their roles in leadership and how they have advanced over the years in Africa against these odds. It is becoming more apparent than ever that female leadership in Africa is predetermined by the state of women’s affairs in a country. More women seem to be breaking beyond society’s expectations of their potential being limited to the home front. Reports have shown that when women are able to reach their full potential – equal participation in the economy as their male counterparts – global GDP can increase and in sub-Saharan Africa specifically, the GDP can increase by 27%, or $0.7 trillion, when the gap is closed. According to a report by McKinsey, women make up over half the world’s population, but only 37% of them are in the workforce. With that in mind, many initiatives and programs have been established to combat gender inequality, providing more opportunities for women to join the workforce. These initiatives often have a common theme which is to empower women and make them qualified leaders in different sectors through scholarships, skill acquisition, grants, competitions, mentorship, etc. Despite the gains that have been made by African female leaders, there is still more work to be done. Boosting the number of African women in leadership roles – that have power and influence – would require a culture shift in regard to societal expectations and norms.",
     button: "Read More",
   },
-  //   { name: "", image: a7, content: "", button: "Read More" },
+  {
+    name: "NTDs – Think Global Health",
+    image: a7,
+    content:
+      "Africa can’t unleash its great potential until it ends neglected tropical diseases (NTDs). This group of parasitic, viral, and bacterial infections, which include intestinal worms, schistosomiasis, and trachoma, infect more than 600 million people in Africa and more than 1.7 billion people worldwide. And far from being a distraction during the COVID-19 pandemic, there are synergistic ways that countries in Africa can invest in fighting both. Not only is addressing NTDs important in its own right; doing so can alleviate poverty and strengthen health systems.",
+    button: "Read More",
+  },
 ];
