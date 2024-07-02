@@ -1,7 +1,13 @@
 import { useState } from "react";
 import logo from "../assets/logo.jpg";
 
-const navBar = ["Home", "Research", "CV", "Social"];
+const navBar = ["Home", "Research", "CV", "LinkedIn"];
+const links = [
+  "https://teganmosugu.com/",
+  "#",
+  "https://teganmosugu.com/Cv/",
+  "https://www.linkedin.com/in/teganjosephmosugu/",
+];
 
 export default function Header() {
   //   const [addBorder, setAddBorder] = useState("");
@@ -23,8 +29,10 @@ export default function Header() {
       </div>
       <div className="flex gap-10 items-center">
         {navBar.map((item, idx) => (
-          <ul key={idx}>
-            <li
+          <ul key={idx} className="cursor-pointer">
+            <a
+              href={links[idx]}
+              target="_blank"
               onClick={() => handleTabClick(item)}
               className={`hover:text-[#910249] ${
                 selectedTab === item
@@ -33,7 +41,7 @@ export default function Header() {
               } `}
             >
               {item}
-            </li>
+            </a>
           </ul>
         ))}
       </div>

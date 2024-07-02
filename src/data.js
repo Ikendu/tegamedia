@@ -8,6 +8,7 @@ import a7 from "./assets/17.jpg";
 
 export const data = [
   {
+    id: 0,
     name: "COVID-19",
     image: a1,
     content:
@@ -15,6 +16,7 @@ export const data = [
     button: "Read More",
   },
   {
+    id: 1,
     name: "The impact of financialisation on global health: a series of pharmaceutical case studies (finpharm)",
     image: a2,
     content:
@@ -22,6 +24,7 @@ export const data = [
     button: "Read More",
   },
   {
+    id: 2,
     name: "NCDs – Connecting The Dots",
     image: a3,
     content:
@@ -29,6 +32,7 @@ export const data = [
     button: "Read More",
   },
   {
+    id: 3,
     name: "Evidence-Based Management: Panacea or Placebo? Insights from Nigerian HIV/AIDS Service Delivery",
     image: a4,
     content:
@@ -36,6 +40,7 @@ export const data = [
     button: "Read More",
   },
   {
+    id: 4,
     name: "Organizational Behavior",
     image: a5,
     content:
@@ -43,6 +48,7 @@ export const data = [
     button: "Read More",
   },
   {
+    id: 5,
     name: "African Women Leaders in the 21st Century",
     image: a6,
     content:
@@ -50,6 +56,7 @@ export const data = [
     button: "Read More",
   },
   {
+    id: 6,
     name: "NTDs – Think Global Health",
     image: a7,
     content:

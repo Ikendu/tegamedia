@@ -1,7 +1,7 @@
-export default function DisplayContent({ name, image, content, change }) {
+export default function DisplayContent({ name, image, content, change, id }) {
   return (
     <>
-      <div className="mx-16 my-10">
+      <div className="mx-16 my-10" id={id}>
         <div
           className={`flex gap-16 justify-between ${
             change && `flex-row-reverse`
