@@ -18,7 +18,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-full h-1 bg-slate-300"></div>
+      <div className="w-full h-[1px] bg-slate-600 my-10"></div>
       <div className="flex w-full justify-center mt-10 ">
         <p className="text-center">© 2024, Tegan Mosugu.</p>
         <p>All rights reserved.</p>
