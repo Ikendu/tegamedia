@@ -6,7 +6,7 @@ import a5 from "./assets/15.png";
 import a6 from "./assets/16.png";
 import a7 from "./assets/17.jpg";
 
-const data = [
+export const data = [
   {
     name: "COVID-19",
     image: a1,
