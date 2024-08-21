@@ -28,6 +28,7 @@ export default function ReseachPage() {
           image={data[0].image}
           content={data[0].content}
           id={data[0].id}
+          link={data[0].link}
         />
         <DisplayContent
           name={data[1].name}
@@ -35,12 +36,14 @@ export default function ReseachPage() {
           content={data[1].content}
           change={change}
           id={data[1].id}
+          link={data[1].link}
         />
         <DisplayContent
           name={data[2].name}
           image={data[2].image}
           content={data[2].content}
           id={data[2].id}
+          link={data[2].link}
         />
         <DisplayContent
           name={data[3].name}
@@ -48,12 +51,14 @@ export default function ReseachPage() {
           content={data[3].content}
           change={change}
           id={data[3].id}
+          link={data[3].link}
         />
         <DisplayContent
           name={data[4].name}
           image={data[4].image}
           content={data[4].content}
           id={data[4].id}
+          link={data[4].link}
         />
         <DisplayContent
           name={data[5].name}
@@ -61,6 +66,7 @@ export default function ReseachPage() {
           content={data[5].content}
           change={change}
           id={data[5].id}
+          link={data[5].link}
         />
         <div className="flex gap-4 items-center justify-center">
           <div className="w-[250px] h-[1px] bg-[#910249] mt-4"></div>
@@ -75,6 +81,7 @@ export default function ReseachPage() {
           image={data[6].image}
           content={data[6].content}
           id={data[6].id}
+          link={data[6].link}
         />
       </>
     </div>

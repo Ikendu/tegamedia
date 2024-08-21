@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/logo.jpg";
+import MobileNavIcon from "../assets/icons/MobileNavIcon";
 
 const navBar = ["Home", "Research", "CV", "LinkedIn"];
 const links = [
@@ -25,7 +26,7 @@ export default function Header() {
     <div className="flex items-center justify-between border-b-4 py-3 border-b-[#910249] px-5 ">
       <div className="flex items-center gap-2">
         <img src={logo} alt="Tegan Mosugu" className="rounded-full h-10 w-10" />
-        <p className="text-2xl font-bold">Tegan Mosugu</p>
+        <p className="text-xl md:text-2xl font-bold">Tegan Mosugu</p>
       </div>
       <div className="flex gap-10 items-center">
         {navBar.map((item, idx) => (
@@ -44,6 +45,7 @@ export default function Header() {
             </a>
           </ul>
         ))}
+        <MobileNavIcon />
       </div>
     </div>
   );
