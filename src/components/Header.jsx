@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/logo.jpg";
 import MobileNavIcon from "../assets/icons/MobileNavIcon";
+import NavbarIcon from "../assets/icons/NavIcon";
 
 const navBar = ["Home", "Research", "CV", "LinkedIn"];
 const links = [
@@ -28,7 +29,7 @@ export default function Header() {
         <img src={logo} alt="Tegan Mosugu" className="rounded-full h-10 w-10" />
         <p className="text-xl md:text-2xl font-bold">Tegan Mosugu</p>
       </div>
-      <div className="flex gap-10 items-center">
+      <div className="md:flex md:gap-10 items-center hidden">
         {navBar.map((item, idx) => (
           <ul key={idx} className="cursor-pointer">
             <a
@@ -45,7 +46,27 @@ export default function Header() {
             </a>
           </ul>
         ))}
+      </div>
+      <div className="md:hidden ">
         <MobileNavIcon />
+      </div>
+      <div className="md:hidden">
+        {navBar.map((item, idx) => (
+          <ul key={idx} className="cursor-pointer">
+            <a
+              href={links[idx]}
+              target="_blank"
+              onClick={() => handleTabClick(item)}
+              className={`hover:text-[#910249] ${
+                selectedTab === item
+                  ? "border-l-4 border-[#d61c79] px-2 rounded-lg"
+                  : "border-l-4 border-white px-2 rounded-lg"
+              } `}
+            >
+              {item}
+            </a>
+          </ul>
+        ))}
       </div>
     </div>
   );
