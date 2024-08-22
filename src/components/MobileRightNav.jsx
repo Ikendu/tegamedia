@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const navBar = ["Home", "Research", "CV", "LinkedIn"];
 const links = [
   "https://teganmosugu.com/",
@@ -6,9 +8,20 @@ const links = [
   "https://www.linkedin.com/in/teganjosephmosugu/",
 ];
 
-export default function MobileRightNav() {
+export default function MobileRightNav(showMobileNav) {
+  //   const [addBorder, setAddBorder] = useState("");
+  const [selectedTab, setSelectedTab] = useState("Home");
+
+  //   const changeBorder = (idx) => {
+  //     if (idx) setAddBorder("border-l-4 border-red-500 px-3 rounded-lg");
+  //   };
+  const handleTabClick = (tab) => {
+    setSelectedTab(tab);
+    // setImageCategory(idx);
+  };
+
   return (
-    <div>
+    <div className="md:flex md:gap-10 items-center hidden">
       {navBar.map((item, idx) => (
         <ul key={idx} className="cursor-pointer">
           <a
