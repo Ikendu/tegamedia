@@ -16,7 +16,7 @@ export default function ReseachPage() {
             <img
               src={item?.image}
               alt={item?.name}
-              className="h-16 rounded-xl flex"
+              className="md:h-16 md:rounded-xl rounded min-w-10 min-h-10 flex object-cover"
               title={item?.name}
             />
           </a>
