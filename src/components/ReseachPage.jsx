@@ -86,14 +86,14 @@ export default function ReseachPage() {
       </div>
       <div className="md:hidden my-16">
         {data.map((item, idx) => (
-          <div className="">
-            <div className="text-2xl ">{item.name}</div>
+          <div className="my-10">
+            <div className="text-2xl my-4 text-[#a72666] ">{item.name}</div>
             <img
               src={item.image}
               alt={item.name}
-              className="w-screen max-h-[300px] object-cover"
+              className="w-screen max-h-[300px] object-cover rounded"
             />
-            <div>{item.content}</div>
+            <div className=" my-4 text-justify">{item.content}</div>
           </div>
         ))}
       </div>
