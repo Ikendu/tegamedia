@@ -22,7 +22,7 @@ export default function ReseachPage() {
           </a>
         ))}
       </div>
-      <>
+      <div className="hidden md:block">
         <DisplayContent
           name={data[0].name}
           image={data[0].image}
@@ -83,7 +83,20 @@ export default function ReseachPage() {
           id={data[6].id}
           link={data[6].link}
         />
-      </>
+      </div>
+      <div className="md:hidden my-16">
+        {data.map((item, idx) => (
+          <div className="">
+            <div className="text-2xl ">{item.name}</div>
+            <img
+              src={item.image}
+              alt={item.name}
+              className="w-screen max-h-[300px] object-cover"
+            />
+            <div>{item.content}</div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
