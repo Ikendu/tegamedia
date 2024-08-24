@@ -5,11 +5,13 @@ import { data } from "../data";
 import DisplayContent from "./DisplayContent";
 
 export default function ReseachPage() {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [expandedIndx, setExpandedIndex] = useState(null);
   const change = true;
-  const handleContentExpansion = () => {
-    setIsExpanded(true);
+
+  const handleContentExpansion = (id) => {
+    setExpandedIndex(expandedIndx === id ? null : id);
   };
+
   return (
     <div>
       <h1 className="text-center my-20 text-5xl font-bold text-[#910249] border-b-4 py-4">
@@ -100,10 +102,10 @@ export default function ReseachPage() {
             />
             <div>
               <div className=" my-4 text-justify">
-                {isExpanded ? item.content : item.few}
+                {expandedIndx === idx ? item.content : item.few}
               </div>
-              <button onClick={handleContentExpansion}>
-                {isExpanded ? "Show less" : "Show more"}
+              <button onClick={() => handleContentExpansion(idx)}>
+                {expandedIndx === idx ? "Show less" : "Show more"}
               </button>
             </div>
           </div>
