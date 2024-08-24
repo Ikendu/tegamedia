@@ -26,7 +26,7 @@ export default function MobileNavBar() {
             className={`hover:text-[#910249] ${
               selectedTab === item
                 ? "border-l-4 border-[#d61c79] px-2 rounded-lg"
-                : "border-l-4 border-slate-300  px-2 rounded-lg"
+                : "border-l-4 border-slate-300 px-2 rounded-lg"
             } `}
           >
             {item}

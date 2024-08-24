@@ -1,26 +1,28 @@
 export default function Footer() {
   return (
-    <div className="bg-black text-white p-10">
-      <div className="flex w-full justify-between px-36">
+    <div className="bg-black text-white md:p-10 p-3">
+      <div className="flex w-full justify-between gap-2 md:px-36 px-5">
         <div>
           <p className="text-gray-500 font-bold">Professional enquiries</p>
           <p>teganmosugu.tjm@gmail.com</p>
         </div>
-        <div>
-          <p className="text-gray-500 font-bold">Address</p>
-          <p>USA | Canada | Nigeria</p>
-        </div>
-        <div>
-          <p className="text-gray-500 font-bold">Connect</p>
+        <div className="md:flex gap-10">
           <div>
-            <img />
-            <a
-              href="https://www.linkedin.com/in/teganjosephmosugu/"
-              target="_blank"
-              className="cursor-pointer"
-            >
-              LinkedIn
-            </a>
+            <p className="text-gray-500 font-bold">Address</p>
+            <p>USA | Canada | Nigeria</p>
+          </div>
+          <div>
+            <p className="text-gray-500 font-bold">Connect</p>
+            <div>
+              <img />
+              <a
+                href="https://www.linkedin.com/in/teganjosephmosugu/"
+                target="_blank"
+                className="cursor-pointer"
+              >
+                LinkedIn
+              </a>
+            </div>
           </div>
         </div>
       </div>

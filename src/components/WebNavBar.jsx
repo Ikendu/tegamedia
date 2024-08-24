@@ -9,15 +9,10 @@ const links = [
 ];
 
 export default function WebNavBar(showMobileNav) {
-  //   const [addBorder, setAddBorder] = useState("");
   const [selectedTab, setSelectedTab] = useState("Home");
 
-  //   const changeBorder = (idx) => {
-  //     if (idx) setAddBorder("border-l-4 border-red-500 px-3 rounded-lg");
-  //   };
   const handleTabClick = (tab) => {
     setSelectedTab(tab);
-    // setImageCategory(idx);
   };
 
   return (
