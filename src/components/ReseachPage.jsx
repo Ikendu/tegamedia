@@ -101,12 +101,22 @@ export default function ReseachPage() {
               className="w-screen max-h-[300px] object-cover rounded"
             />
             <div>
-              <div className=" my-4 text-justify">
+              <div
+                className=" my-4 text-justify cursor-pointer"
+                onClick={() => handleContentExpansion(idx)}
+              >
                 {expandedIndx === idx ? item.content : item.few}
               </div>
-              <button onClick={() => handleContentExpansion(idx)}>
-                {expandedIndx === idx ? "Show less" : "Show more"}
-              </button>
+
+              {expandedIndx === idx && (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  className="flex my-5 bg-[#fd1b1b] px-6 py-2 max-w-32 text-white rounded-[5px] text-[16px]"
+                >
+                  Read More
+                </a>
+              )}
             </div>
           </div>
         ))}
